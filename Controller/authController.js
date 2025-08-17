@@ -16,7 +16,7 @@ const createJWTToken = (user_id, email) => {
         expiresIn: "12h",
     });
 };
-
+//test
 // const registerScheme = Joi.object({
 //     email: Joi.string().email().required(),
 //     password: Joi.string()
