@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const packageController = require("../Controller/packageController");
-const verifyJWT = require("../middleware/authMiddleware");
+const verifyJWT = require("../Middleware/authMiddleware");
 
 router.post("/createpackage", verifyJWT, packageController.createPackage);
 
