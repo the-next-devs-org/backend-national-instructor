@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 const userController = require("../Controller/userController");
-const VerifyJWTtoken = require('../Middleware/authMiddleware.js')
+const VerifyJWTtoken = require('../middleware/authMiddleware.js')
 
 router.get("/learners", VerifyJWTtoken, userController.getLearners);
 router.get("/instructors", VerifyJWTtoken, userController.getInstructors);

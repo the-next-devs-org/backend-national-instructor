@@ -1,5 +1,5 @@
 const authController = require('../Controller/authController');
-const VerifyJWTtoken = require('../Middleware/authMiddleware.js')
+const VerifyJWTtoken = require('../middleware/authMiddleware.js')
 
 const router = require("express").Router();
 
